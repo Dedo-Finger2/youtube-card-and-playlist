@@ -2,8 +2,8 @@
 
 :root {
   --font-family: Inter, sans-serif;
-  --h1: bold 2rem/1.6rem var(--font-family);
-  --regular-text: bold 1rem/1.4rem var(--font-family);
+  --h1: bold 1.2rem/1.6rem var(--font-family);
+  --regular-text: 500 1rem/1.4rem var(--font-family);
 }
 
 * {
@@ -15,66 +15,76 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12rem;
 }
 
 img {
   width: 100%;
 }
 
-.thumbnail-image {
-  border-radius: .9rem;
+h1 {
+  font:  var(--h1);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
 }
 
 .thumbnail {
   position: relative;
 }
 
+.thumbnail-image {
+  border-radius: .9rem;
+}
+
 .thumbnail-video-time {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
-  right:  2.5rem;
-  bottom: 2.5rem;
-  padding: .4rem .7rem;
+  right:  1rem;
+  bottom: 1rem;
+  padding: .2rem .6rem;
   border-radius: .4rem;
   color: white;
   font: var(--regular-text);
 }
 
+.channel-icon-and-content {
+  display: flex;
+  gap: 1rem;
+}
+
 .channel-icon {
-  width: 4rem; 
-  height: 4rem;
+  width: 3.4rem; 
+  height: 3.4rem;
   border-radius: 999999px;
-}
-
-.video-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.logo-and-content {
-  display: flex;
-  gap: 2rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: .8rem;
-}
-
-.extra-content {
-  display: flex;
-  gap: .4rem
+  gap: .6rem;
 }
 
 .bottom-content {
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: .2rem;
 }
 
 .bottom-content > p {
   font: var(--regular-text);
+}
+
+.extra-content {
+  display: flex;
+  gap: .4rem
 }
