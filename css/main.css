@@ -8,5 +8,73 @@
 
 * {
   font-family: var(--font-family);
+  margin: 0;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem;
+}
+
+img {
+  width: 100%;
+}
+
+.thumbnail-image {
+  border-radius: .9rem;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail-video-time {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  right:  2.5rem;
+  bottom: 2.5rem;
+  padding: .4rem .7rem;
+  border-radius: .4rem;
+  color: white;
+  font: var(--regular-text);
+}
+
+.channel-icon {
+  width: 4rem; 
+  height: 4rem;
+  border-radius: 999999px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logo-and-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.extra-content {
+  display: flex;
+  gap: .4rem
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.bottom-content > p {
+  font: var(--regular-text);
+}
